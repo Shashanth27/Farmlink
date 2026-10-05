@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  /* FarmSafe palette — trust blue + safety orange */
+  --color-green-50: #eef4fd;
+  --color-green-100: #dbe7fb;
+  --color-green-200: #b6cef6;
+  --color-green-300: #85adf0;
+  --color-green-400: #4f83e6;
+  --color-green-500: #2c5fdb;
+  --color-green-600: #2148c9;
+  --color-green-700: #1d4ed8;
+  --color-green-800: #1a3a99;
+  --color-green-900: #172d73;
+
+  --color-emerald-50: #eef2fd;
+  --color-emerald-100: #dbe3fb;
+  --color-emerald-300: #8fa8ee;
+  --color-emerald-400: #5c7de3;
+  --color-emerald-500: #3457d4;
+  --color-emerald-600: #2740b0;
+  --color-emerald-700: #22368e;
+
+  --color-lime-50: #eef6fb;
+  --color-lime-100: #d9ecf6;
+  --color-lime-300: #7fbfe0;
+  --color-lime-600: #2e8bb3;
+
+  --color-teal-700: #1e5c8a;
+
+  --color-amber-50: #fff3ea;
+  --color-amber-100: #ffe1c7;
+  --color-amber-200: #ffc794;
+  --color-amber-300: #ffa75c;
+  --color-amber-400: #f97316;
+  --color-amber-500: #dc5f0c;
+  --color-amber-600: #b74d0a;
+  --color-amber-700: #953f0b;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f7f9fc;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  overscroll-behavior-y: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Safe area padding for mobile notches and bottom bars */
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Custom app scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Mobile button active scale */
+button, a {
+  user-select: none;
+  -webkit-user-select: none;
+}
