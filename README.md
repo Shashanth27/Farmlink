@@ -1,4 +1,4 @@
-# 🛡️ FarmSafe
+# 🛡️ FarmLink
 
 **FarmSafe** is an AI-powered decision-support tool that helps Indian farmers decide **when and where to sell their crops**, by combining live weather data, real-time mandi (market) prices, historical price trends, and crop-specific agricultural knowledge — then turning all of it into a simple, trustworthy advisory using **Gemma**.
 
